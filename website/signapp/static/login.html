@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #20c997, #6f42c1);
+            color: #fff;
+        }
+        .container {
+            background: #f9f9f9;
+            color: #333;
+            border-radius: 10px;
+            padding: 35px;
+            width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .forgot-password a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #6f42c1;
+        }
+        .btn {
+            background: linear-gradient(135deg, #20c997, #6f42c1);
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .social-login {
+            margin-top: 20px;
+        }
+        .social-login p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .social-login .icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-login .icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .social-login .icons .facebook {
+            background-color: #1877f2;
+        }
+        .social-login .icons .google {
+            background-color: #ea4335;
+        }
+        .signup {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .signup a {
+            text-decoration: none;
+            color: #6f42c1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Type your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Type your password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="social-login">
+            <p>Or Login In Using</p>
+            <div class="icons">
+                <a href="#" class="facebook">F</a>
+                <a href="#" class="google">G</a>
+            </div>
+            <p class="signup">Don't have an account? <a href="SIGN.HTML" target="_blank">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
